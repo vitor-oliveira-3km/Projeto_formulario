@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 class="titulo">Formulário simples de cadastro</h1>
+        <p class="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+    
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome</strong></label>
+                <br>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <br>
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>    
+        <div class="campo">
+            <label for="email"><strong>Email<strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="propriedade"><strong>Apelido<strong></label>
+            <input type="propriedade" name="propriedade" id="propriedade" required>
+        </div>
+
+
+        <div class="campo">
+            <label for="">Qual dessas áreas você se identifica?</label>
+            <label for="">
+                <input type="radio" name="profissão" value="agronomo" checked>Agronomo
+            </label>
+            <label for="">
+                <input type="radio" name="profissão" value="veterinario">Veterinário
+            </label>
+            <label for="">
+                <input type="radio" name="profissão" value="zootecnista">Zootecnista
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="escolaridade">Escolaridade</label>
+            <select id="escolaridade">
+                <option selected disabled value="">Selecione...</option>
+                <option>Fundamental incompleto</option>
+                <option>Fundamental completo</option>
+                <option>Ensino médio incompleto</option>
+                <option>Ensino médio completo</option>
+                <option>Superior incompleto</option>
+                <option>Superior completo</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label for="">Conhecimentos:</label><br>
+                <input type="checkbox" name="area1" id="area1" value="Sanidade animal">
+                <label for="area1">Sanidade animal</label>
+                <input type="checkbox" name="area2" id="area2" value="Produção animal">
+                <label for="area2">Produção animal</label>
+                <input type="checkbox" name="area3" id="area3" value="Produção de grãos">
+                <label for="area3">Produção de grãos</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="">Conte um pouco da sua experiência profissional</label>
+            <textarea name="experiencia" id="experiencia" rows="6" style="width:26em"></textarea>
+        </div>
+        <button class="button" type="submit">Enviar</button>
+
+    </form>
+
+    <footer class="rodape">&copy; Copyright Vitor de Oliveira - Dev.front-end</footer>
+
+</body>
+</html>
